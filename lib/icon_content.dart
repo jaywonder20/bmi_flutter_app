@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class IconColumnWidget extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -10,7 +12,6 @@ class IconColumnWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var labelTextStyle = TextStyle(fontSize: 18.0, color: Color(0xFF8D8E9B));
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -21,7 +22,7 @@ class IconColumnWidget extends StatelessWidget {
         SizedBox(height: 15.0),
         Text(
           label,
-          style: labelTextStyle,
+          style: klabelTextStyle,
         ),
       ],
     );
